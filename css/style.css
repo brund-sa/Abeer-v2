@@ -2600,13 +2600,14 @@ footer.ftshap:before {
     box-shadow: 0 10px 15px 0 rgba(3,35,68,.1);
     line-height: 52px;
     -webkit-border-radius: 100px;
-    border-radius: 100px
+    border-radius: 100px 100px 100px 25px;
 }
 
 .btn-outline:hover {
-    background: #ff1f8e;
-    color: #fff;
-    border: 2px solid #ff1f8e
+    background: #593b4d;
+    color: #ffffff;
+    border: 2px solid #593b4d;
+    border-radius: 100px 25px 100px 100px;
 }
 
 .cta-call a,.ps-block span {
