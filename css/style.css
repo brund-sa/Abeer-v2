@@ -6,11 +6,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-html {
+html,body {
     scroll-behavior: smooth;
+    
+    overflow-x: hidden;
   }
 *,body {
-    outline: 0
+    outline: 0;
 }
 
 *,h1,h2,h3,h4,h5,h6,p,ul {
@@ -5941,7 +5943,7 @@ html.hc-nav-yscroll {
 }
 
 body.hc-nav-open {
-    overflow: visible;
+    overflow: hidden;
     width: 100%;
     min-height: 100%
 }
