@@ -6,7 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
+html {
+    scroll-behavior: smooth;
+  }
 *,body {
     outline: 0
 }
@@ -603,7 +605,7 @@ div.custom-nav>ul>li:hover .nx-dropdown {
     overflow: inherit
 }
 
-.-reviewr,.about-agency,.app-cta,.bd-hor .bd-hor-base,.bd-hor .bd-hor-base:hover:after,.bhv-service,.breadcrumb-area,.breadcrumb-areav2,.card-1,.case-study .image-div,.contact-location,.cta-area,.footer-svg,.hero-card-web,.hero-section,.ho-gdnt .s-block,.image-div,.image-set,.img-ca2set,.instagram-post .thumb,.item-image,.link-hover a,.nn-card-set,.offer-image,.our-office,.overlay-- .s-block,.portfolio-item-info .-reviewr,.service,.service-section,.service-slide,.srvc-bg-nx,.team,.video-review {
+.-reviewr,.about-agency,.app-cta,.bd-hor .bd-hor-base,.bd-hor .bd-hor-base:hover:after,.bhv-service,.breadcrumb-area,.breadcrumb-areav2,.card-1,.case-study .image-div,.contact-location,.cta-area,.footer-svg,.hero-card-web,.hero-section,.hero-section-2,.ho-gdnt .s-block,.image-div,.image-set,.img-ca2set,.instagram-post .thumb,.item-image,.link-hover a,.nn-card-set,.offer-image,.our-office,.overlay-- .s-block,.portfolio-item-info .-reviewr,.service,.service-section,.service-slide,.srvc-bg-nx,.team,.video-review {
     overflow: hidden
 }
 
@@ -1025,6 +1027,15 @@ a.play-video::after {
     display: grid
 }
 
+.hero-section-2 {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    height: 100vh;
+    display: grid;
+    height: 1280px; background-attachment: fixed;
+}
+
 .btn-main {
     font-size: 16px;
     font-weight: 400;
@@ -1039,7 +1050,7 @@ a.play-video::after {
     display: inline-block;
     position: relative;
     -webkit-box-shadow: 0 10px 15px 0 rgba(233,30,99,.15);
-    box-shadow: 0 10px 15px 0 rgba(233,30,99,.15)
+    box-shadow: 0 10px 15px 0 rgba(233,30,99,.15);
 }
 
 .btn-main:hover {
@@ -1919,7 +1930,7 @@ a.play-video::after {
 }
 
 .form-block button:hover {
-    background-color: #ff1f8e
+    background-color: #ff1f8e00
 }
 
 .form-block button {
@@ -3552,7 +3563,12 @@ footer.ftshap:before {
 }
 
 .fl-hero {
-    background: url(../images/hero/freelancer.jpg) center center no-repeat, #e4b9b2;
+    background: url(../images/hero/hero.jpg) center center no-repeat, #e4b9b2;
+    background-size: cover,cover
+}
+
+.fl-hero-2 {
+    background: url(../images/hero/hero-2.jpg) center center no-repeat, #e4b9b2;
     background-size: cover,cover
 }
 
@@ -3785,7 +3801,7 @@ footer.ftshap:before {
 .bg-shape-dez {
     position: relative
 }
-
+/*
 .bg-shape-dez::after,.bg-shape-dez::before {
     position: absolute;
     z-index: 0;
@@ -3795,7 +3811,7 @@ footer.ftshap:before {
     background: #007bff;
     background: -webkit-linear-gradient(left,#007bff 0,#ff1f8e 100%);
     background: linear-gradient(to right,#007bff 0,#ff1f8e 100%)
-}
+} */
 
 .ovr-bg1 .ovr-base:before,.ovr-bg2 .ovr-base:before,.video-review a:after {
     content: ""
@@ -5791,10 +5807,10 @@ html .pb140 {
 }
 
 .bg-gradient4 {
-    background: #c1eeff;
-    background: -moz-linear-gradient(top,#c1eeff 0,#f5faff 100%);
-    background: -webkit-linear-gradient(top,#c1eeff 0,#f5faff 100%);
-    background: linear-gradient(to bottom,#c1eeff 0,#f5faff 100%)
+    background: #e4b9b2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(top, #e4b9b2, #fed6cf 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(top, #e4b9b2, #fed6cf 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .bg-gradient5 {
