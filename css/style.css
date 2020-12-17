@@ -7212,10 +7212,22 @@ body.hc-nav-open {
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 975px) {
     .navbar-brand img {
         width: 120px !Important;
     }
+    .footer-social-media-icons a {
+        font-size: 1.2rem;
+        margin: 0 1px !important;
+    }
+    .header-heading p {
+        padding: 0 5% !important;
+    }
+    .header-heading h1 {
+        font-size: 32px !important;
+        line-height: 35px !important;
+    }
+
 }
 
 
