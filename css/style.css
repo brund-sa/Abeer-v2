@@ -5218,7 +5218,10 @@ h3 a {
 }
 
 .logo-pre {
-    background: #e2e2e2;
+    background: #205668;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #205668, #5e929c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #205668, #5e929c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     border-radius: 50%;
     height: 100px;
     width: 100px;
