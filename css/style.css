@@ -37,9 +37,9 @@ html,body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #583A4C;
-    background: #583A4C;
-    background:#583A4C
+    background: #5e929c;
+    background: #5e929c;
+    background:#5e929c
 }
 
 ::-moz-selection {
@@ -2028,7 +2028,7 @@ footer,footer .row {
     border-radius: 100px;
     color: #fff;
     opacity: .4;
-    background: url(../images/icons/up-arrow.svg) center center no-repeat #583a4c;
+    background: url(../images/icons/up-arrow.svg) center center no-repeat #5e929c;
     background-size: 15px;
 }
 
@@ -7199,4 +7199,24 @@ body.hc-nav-open {
     .navbar-brand img {
         width: 120px !Important;
     }
+}
+
+
+/* ===============================================================
+==================================================================
+=====================    PROMOTION CSS   =========================
+==================================================================
+================================================================*/
+
+.qr-btn {
+    background-color: #5e929c !important;
+    -webkit-box-shadow: 0 10px 15px 0 #5e929c38 !important;
+    box-shadow: 0 10px 15px 0 #5e929c38 !important;
+}
+
+.qr-btn:hover {
+    border-radius: 100px 25px 100px 100px;
+    background: #00000000 !important;
+    color: #ffffff;
+    border: 1px solid #5e929c;
 }
