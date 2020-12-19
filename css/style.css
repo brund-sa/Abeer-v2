@@ -7256,8 +7256,6 @@ body.hc-nav-open {
     border-radius: 50%;
     position: fixed;
     background: #fff;
-    font-size: 1.5rem;
-    color: #215668;
     z-index: 99;
     text-align: center;
     right: 20px;
@@ -7270,5 +7268,7 @@ body.hc-nav-open {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     position: absolute;
+    color: #215668;
+    font-size: 1rem;
     color: #215668;
 }
