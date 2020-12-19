@@ -7249,3 +7249,26 @@ body.hc-nav-open {
     color: #ffffff;
     border: 1px solid #5e929c;
 }
+
+.language {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    background: #fff;
+    font-size: 1.5rem;
+    color: #215668;
+    z-index: 99;
+    text-align: center;
+    right: 20px;
+    top: 20px;
+    cursor: pointer; 
+}
+
+.language a {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    color: #215668;
+}
