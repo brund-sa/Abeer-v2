@@ -1,3 +1,12 @@
+/* =========================
+======= ADDITIONAL CSS =====
+==========================*/
+a.navbar-brand img {
+    width: 110px;
+    filter: invert(1);
+    padding: 11px;
+}
+
 /*=========================
 
     FONTS
@@ -363,7 +372,7 @@ header .dropdown-menu {
     background: #fff;
     -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,.08);
     box-shadow: 0 4px 6px 0 rgba(12,0,46,.08);
-    height: 70px
+    height: 100px;
 }
 
 .nav-item.dropdown:hover {
