@@ -5232,15 +5232,13 @@ h3 a {
 }
 
 .logo-pre {
-    background: #205668;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #205668, #5e929c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #205668, #5e929c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    /*sbackground: #205668; 
+    background: -webkit-linear-gradient(to right, #205668, #5e929c);  
+    background: linear-gradient(to right, #205668, #5e929c);
+    border-radius: 50%;*/
+    height: 250px;
+    width: 250px;
     box-shadow: 0 0 0 0 transparent;
-    animation: pulse 2s infinite;
     margin: 0 auto 30px;
     display: flex;
     align-items: center;
