@@ -7,6 +7,16 @@ a.navbar-brand img {
     padding: 11px;
 }
 
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0 !important;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+
 /*=========================
 
     FONTS
@@ -7277,6 +7287,16 @@ body.hc-nav-open {
         padding: 0 15px!important;
         line-height: 42px;
         font-size: 12px;
+    }
+    /* additional CSS MEDIA */
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: .1rem;
+        pointer-events: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
     }
  }
 
