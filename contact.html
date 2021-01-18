@@ -35,26 +35,27 @@
     <header class="top-header header-pr">
         <nav class="navbar navbar-expand-lg navbar-light justify-content-right navbar-mobile fixed-top navfix">
             <div class="container">
-                <a class="navbar-brand" href="./"> <img src="images/logo.png" alt="Logo" width="170" /></a>
+                <a class="navbar-brand" href="./"> 
+                    <img src="images/logo-black.png" alt="Logo" width="170" class=""/>
+                </a>
                 <button class="navbar-toggler mobile-none" type="button" data-toggle="collapse" data-target="#navbar4"
                     aria-controls="navbar4" aria-expanded="false" aria-label="Toggle navigation"><span
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse animate slideIn mobile-none" id="navbar4">
                     <ul class="mr-auto"></ul>
-                    <ul class="navbar-nav d-menu ">
+                    <ul class="navbar-nav d-menu">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About </a> </li>
-                        <li class="nav-item"><a class="nav-link" href="index.html">Brochures</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Abeer</a> </li>
                         <li class="nav-item"><a class="nav-link" href="services.html">Services</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="news.html">Blogs </a> </li>
-                        <li class="nav-item"> <a class="nav-link custom-btn lnk btn-main bg-btn" href="contact.html">CONTACT US
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Treated Cases </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us </a> </li>
+                        <li class="nav-item"> <a class="nav-link custom-btn lnk btn-main bg-btn" href="#"  data-toggle="modal" data-target="#modalform">Book Appointment
                                 <span class="circle"></span></a> </li>
                     </ul>
                 </div>
                 <div class="mobile-menu">
                     <ul class="mob-nav">
-                        <li> <a class="custom-btn lnk btn-main bg-btn" href="contact.html">CONTACT US<span
+                        <li> <a class="custom-btn lnk btn-main bg-btn" href="#" data-toggle="modal" data-target="#modalform">Book Appointment<span
                                     class="circle"></span></a></li>
                         <li class="ml8"><a class="toggle mobilemenu" href="#"><span></span></a> </li>
                     </ul>
@@ -66,11 +67,10 @@
         <nav id="main-nav">
             <ul class="first-nav">
                 <li><a href="index.html">Home</a> </li>
-                <li><a href="about.html">About </a> </li>
-                <li><a href="index.html">Brochures</a> </li>
-                <li><a href="gallery.html">Gallery </a> </li>
+                <li><a href="about.html">About Abeer</a> </li>
                 <li><a href="services.html">Services</a> </li>
-                <li><a href="news.html">Blogs </a> </li>
+                <li><a href="gallery.html">Treated Cases </a> </li>
+                <li><a href="contact.html">Contact Us</a> </li>
             </ul>
             <ul class="bottom-nav">
                 <li class="prb">
@@ -91,7 +91,7 @@
             </ul>
         </nav>
     </header>
-    <!--End Header --> 
+    <!--End Header -->
     <!--Breadcrumb Area-->
     <section class="breadcrumb-area banner-1" data-background="images/banner/1.jpg">
         <div class="text-block">
@@ -101,12 +101,12 @@
                     <div class="bread-inner">
                     <div class="bread-menu">
                         <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="index.html" class="white__text__70">Home</a></li>
+                        <li><a href="#" class="white__text__70">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="bread-title">
-                        <h2>Let's Talk</h2>
+                        <h2 class="white__text">Let's Talk</h2>
                     </div>
                     </div>
                 </div>
@@ -121,39 +121,42 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 v-center">
                     <div class="common-heading text-l">
-                        <span>Contact Now</span>
+                        <span class="f-cursive">Contact Now</span>
                         <h2 class="mt0 mb0">Have Question? Write a Message</h2>
-                        <p class="mb60 mt20">We will catch you as early as we receive the message</p>
+                        <div class="follow-label mt30 mb70">
+                            <a href="https://m.facebook.com/AbeerEsamClinic" target="blank" class="wow bounceIn" data-wow-delay=".2s"><i
+                                class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/AbeerEsamclinic/" target="blank" class="wow bounceIn" data-wow-delay=".4s"><i
+                                class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/abeeresamclinic" target="blank" class="wow bounceIn" data-wow-delay=".6s"><i
+                                class="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/abeeresamclinic" target="blank" class="wow bounceIn" data-wow-delay=".8s"><i
+                                class="fab fa-youtube"></i></a>
+                            <a href="https://wa.me/966532807545" target="blank" class="wow bounceIn" data-wow-delay="1s"><i
+                                class="fab fa-snapchat"></i></a>
+                            <a href="https://wa.me/966532807545" target="blank" class="wow bounceIn" data-wow-delay="1.2s"><i
+                                class="fab fa-whatsapp"></i></a>
+                        </div>
                     </div>
                     <div class="form-block">
                         <form id="contact-form" method="post" action="php/contact.php" data-toggle="validator">
                             <div class="messages"></div>
                             <div class="fieldsets row">
-                                <div class="col-md-6 form-group"><input id="form_name" type="text" name="name"  placeholder="Enter your name *" required="required" data-error="Name is required.">
-                                <div class="help-block with-errors"></div></div>
-                                <div class="col-md-6 form-group"><input id="form_email" type="email" name="email"  placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="col-md-12 form-group"><input id="form_name" type="text" name="name"  placeholder="Enter your name *" required="required" data-error="Name is required.">
                                 <div class="help-block with-errors"></div></div>
                             </div>
                             <div class="fieldsets row">
-                                <div class="col-md-6 form-group"><input id="form_phone" type="text" name="phone"  placeholder="Enter your Phone No *" required="required" data-error="Phone No is required.">
+                                <div class="col-md-12 form-group"><input id="form_email" type="email" name="email"  placeholder="Enter your email *" required="required" data-error="Valid email is required.">
                                 <div class="help-block with-errors"></div></div>
-                                <div class="col-md-6 form-group"><select id="form_need" name="need"  required="required" data-error="Specify your need.">
-                                <option value="">Select Service</option>
-                                <option value="Graphic Design">Inquiry</option>
-                                <option value="Web Design">Schedule Appointment</option>
-                                <option value="App Design">Pricing</option>
-                                <option value="Other">Other</option>
-                                </select>
+                            </div>
+                            <div class="fieldsets row">
+                                <div class="col-md-12 form-group"><input id="form_number" type="text" name="number"  placeholder="Enter your Phone No. *" required="required" data-error="Valid phone no. is required.">
                                 <div class="help-block with-errors"></div></div>
                             </div>
                             <div class="fieldsets form-group"> <textarea id="form_message" name="message"  placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
                             
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" checked="checked">
-                                <label class="custom-control-label" for="customCheck">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Business Name.</label>
-                            </div>
                             <div class="fieldsets mt20">
                                 <button type="submit" class="lnk btn-main bg-btn">Submit <span class="circle dkpr"></span></button>
                             </div>
@@ -163,30 +166,29 @@
                 </div>
                 <div class="col-lg-5 v-center">
                     <div class="contact-details">
-                        <div class="contact-card wow fadeIn" data-wow-delay=".2s">
+                        <div class="contact-card wow fadeIn" data-wow-delay=".4s">
                             <div class="info-card v-center">
                                 <span><i class="fas fa-phone-alt"></i> Phone:</span>
                                 <div class="info-body">
-                                    <p>Assistance hours: Monday – Friday, 9 am to 5 pm</p>
-                                    <a href="tel:+10000000000">+966 53 280 7545</a>
+                                    <p>Assistance hours: Sunday – Thursday, 2 PM to 9 PM</p>
+                                    <a href="tel:+966532807545">+966 53 280 7545</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="email-card mt30 wow fadeIn" data-wow-delay=".5s">
+                        <div class="email-card mt30 wow fadeIn" data-wow-delay=".6s">
                             <div class="info-card v-center">
                                 <span><i class="fas fa-envelope"></i> Email:</span>
                                 <div class="info-body">
                                     <p>Our support team will get back to in 24-h during standard business hours.</p>
-                                    <a href="mailto:info@businessname.com">info@abeeressam.com</a>
+                                    <a href="mailto:info@abeeressam.com">info@abeeressam.com</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="skype-card mt30 wow fadeIn" data-wow-delay=".9s">
+                        <div class="skype-card mt30 wow fadeIn" data-wow-delay=".8s">
                             <div class="info-card v-center">
-                                <span><i class="fab fa-whatsapp"></i> Whatsapp:</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Adress:</span>
                                 <div class="info-body">
-                                    <p>We Are Online: Monday – Friday, 9 am to 5 pm</p>
-                                    <a href="https://wa.me/966532807545">+966 53 280 7545</a>
+                                    <p>Shams Clinic Clinics, King Abdulaziz Road, Al-Shati neighborhoodJeddah 11417, Kingdom of Saudi Arabia</p>
                                 </div>
                             </div>
                         </div>
@@ -196,71 +198,18 @@
         </div>
     </section>
     <!--End Enquire Form-->
-    <!--Start Location-->
-    <section class="contact-location pad-tb bglight">
-        <div class="container">
-        <div class="row justify-content-center">
-        <div class="col-lg-8">
-        <div class="common-heading">
-        <span>Our Locations</span>
-        <h2>Our office</h2>
-        </div>
-        </div>
-        </div>
-        <div class="row justify-content-center upset shape-numm">
-        <div class="col-lg-4 col-sm-6 shape-loc wow fadeInUp" data-wow-delay=".2s">
-        <div class="office-card">
-        <div class="skyline-img">
-        <img src="images/location/newyork.png" alt="Jeddah" class="img-fluid" />
-        </div>
-        <div class="office-text">
-        <h4>Jeddah</h4>
-        <p>603 FA Forest Avenue, Jeddah, KSA 10021</p>
-        <a href="javascript:void(0)" target="blank" class="btn-outline">View on Map <i class="fas fa-chevron-right fa-icon"></i></a>
-        </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 shape-loc wow fadeInUp" data-wow-delay=".4s">
-        <div class="office-card">
-        <div class="skyline-img">
-        <img src="images/location/sydeny.png" alt="Madina" class="img-fluid" />
-        </div>
-        <div class="office-text">
-        <h4>Madina</h4>
-        <p>2449 Columbia Boulevard, Madina, KSA 10021</p>
-        <a href="javascript:void(0)" target="blank" class="btn-outline">View on Map <i class="fas fa-chevron-right fa-icon"></i></a>
-        </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 shape-loc wow fadeInUp" data-wow-delay=".6s">
-        <div class="office-card mb0">
-        <div class="skyline-img">
-        <img src="images/location/rome.png" alt="Riyadh" class="img-fluid" />
-        </div>
-        <div class="office-text">
-        <h4>Riyadh</h4>
-        <p>9988 Piazzetta Scalette Rubiani 99, Riyadh, KSA 84090</p>
-        <a href="javascript:void(0)" target="blank" class="btn-outline">View on Map <i class="fas fa-chevron-right fa-icon"></i></a>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </section>
-    <!--End Location-->
-  
     <!--Start CTA-->
     <section class="cta-area pad-tb">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="common-heading">
-                        <h2>Make an appointment</h2>
-                        <p class="m-b-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        <h2 class="wow fadeInUp white__text" data-wow-delay=".2s">Make an appointment</h2>
+                        <p class="m-b-30 wow fadeInUp white__text__70" data-wow-delay=".4s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the industry’s standard dummy text.</p>
-                        <a href="#" class="btn-main bg-btn lnk wow fadeInUp" data-wow-delay=".6s">BOOK AN APPOINTMENT <i
+                        <a href="#" class="btn-main bg-btn lnk wow fadeInUp white__border" data-wow-delay=".6s" data-toggle="modal" data-target="#modalform">BOOK AN APPOINTMENT <i
                             class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
-                        <p class="cta-call">Or call us now <a href="tel:+1234567890"><i class="fas fa-phone-alt"></i> +966 12 1234 4567</a></p>
+                        <p class="cta-call wow fadeInUp white__text" data-wow-delay=".8s">Or call us now <a href="tel:+1234567890" class="white__text"><i class="fas fa-phone-alt"></i> +966 12 1234 4567</a></p>
                     </div>
                 </div>
             </div>
@@ -280,7 +229,7 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-3 col-sm-6  ftr-brand-pp">
-                        <a class="navbar-brand mt30 mb25" href="#"> <img src="images/logo.png" alt="Logo" width="200" /></a>
+                        <a class="navbar-brand mt30 mb25" href="#"> <img src="images/logo.png" alt="Logo" width="20" /></a>
                         <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
                         <!-- <a href="#" class="btn-main bg-btn3 lnk mt20">Become Partner <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a> -->
                     </div>
@@ -289,15 +238,15 @@
                             <ul class="footer-address-list ftr-details">
                             <li>
                                 <span><i class="fas fa-envelope"></i></span>
-                                <p>Email <span> <a href="mailto:info@businessname.com">info@abeerassam.com</a></span></p>
+                                <p>Email <span> <a href="mailto:info@abeerassam.com">info@abeerassam.com</a></span></p>
                             </li>
                             <li>
                                 <span><i class="fas fa-phone-alt"></i></span>
-                                <p>Phone <span> <a href="tel:+10000000000">+966 12 1234 4567</a></span></p>
+                                <p>Phone <span> <a href="tel:+966532807545">+966 53 280 7545</a></span></p>
                             </li>
                             <li>
                                 <span><i class="fas fa-map-marker-alt"></i></span>
-                                <p>Address <span> 21425 Jeddah Kingdom of Saudi Arabia</span></p>
+                                <p>Address <span> Shams Clinic Clinics, King Abdulaziz Road, Al-Shati neighborhoodJeddah 11417, Kingdom of Saudi Arabia</span></p>
                             </li>
                         </ul>
                     </div>
@@ -316,14 +265,18 @@
                         <h5>SOCIAL LINKS</h5>
                        
                         <div class="footer-social-media-icons">
-                            <a href="javascript:void(0)" target="blank" class="wow bounceIn" data-wow-delay=".2s"><i
+                            <a href="https://m.facebook.com/AbeerEsamClinic" target="blank" class="wow bounceIn" data-wow-delay=".2s"><i
                                 class="fab fa-facebook"></i></a>
-                        <a href="javascript:void(0)" target="blank" class="wow bounceIn" data-wow-delay=".4s"><i
+                            <a href="https://www.instagram.com/AbeerEsamclinic/" target="blank" class="wow bounceIn" data-wow-delay=".4s"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="javascript:void(0)" target="blank" class="wow bounceIn" data-wow-delay=".6s"><i
-                                class="fab fa-whatsapp"></i></a>
-                        <a href="javascript:void(0)" target="blank" class="wow bounceIn" data-wow-delay=".8s"><i
+                            <a href="https://twitter.com/abeeresamclinic" target="blank" class="wow bounceIn" data-wow-delay=".8s"><i
                                 class="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/abeeresamclinic" target="blank" class="wow bounceIn" data-wow-delay=".8s"><i
+                                class="fab fa-youtube"></i></a>
+                            <a href="https://wa.me/966532807545" target="blank" class="wow bounceIn" data-wow-delay=".6s"><i
+                                class="fab fa-snapchat"></i></a>
+                            <a href="https://wa.me/966532807545" target="blank" class="wow bounceIn" data-wow-delay=".6s"><i
+                                class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -344,6 +297,42 @@
         </div>
     </footer>
     <!--End Footer-->
+
+    <!--start Modal html -->
+    <div class="popup-modals">
+        <div class="modal" id="modalform">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <div class="common-heading">
+                        <h4 class="mt0 mb0">Book an appointment 😍</h4>
+                    </div>
+                    <button type="button" class="closes" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">
+                        <div class="form-block fdgn2 mt10 mb10">
+                        <form action="#" method="post" name="feedback-form">
+                            <div class="fieldsets row">
+                                <div class="col-md-12"><input type="text" placeholder="Full Name" name="name" required></div>
+                            </div>
+                            <div class="fieldsets row">
+                                <div class="col-md-6"><input type="email" placeholder="Email Address" name="email" required></div>
+                                <div class="col-md-6"><input type="number" placeholder="Mobile Number" name="phone" required></div>
+                            </div>
+                            <div class="fieldsets row">
+                                <div class="col-md-12"><textarea placeholder="Message" name="message"></textarea></div>
+                            </div>
+                            <div class="fieldsets mt20 pb20">
+                                <button type="submit" name="submit" class="lnk btn-main bg-btn" data-dismiss="modal">Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end Modal html  -->
+
     <!--scroll to top-->
     <a id="scrollUp" href="#top"></a>
     <!-- js placed at the end of the document so the pages load faster -->

@@ -23,6 +23,24 @@ a.navbar-brand img {
     font-family: Cicle;
     src: url(../fonts/Cicle-Gordita.ttf) format("truetype");
 }
+
+:root {
+  --white: #ffffff;
+  --white-70: #ffffffa8;
+}
+
+.white__text {
+    color: var(--white) !important;
+}
+.white__text__70 {
+    color: var(--white-70) !important;
+}
+.white__border:hover {
+    border: 1px solid #fff !important;
+    color: #fff !important;
+}
+
+
 html,body {
     scroll-behavior: smooth;
     
@@ -96,7 +114,7 @@ article,aside,details,figcaption,figure,footer,header,nav,section,summary {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Cicle', serif;
-    color: #583A4C;
+    color: #215668;
     font-weight: 600
 }
 
@@ -189,7 +207,7 @@ span.circle2 {
 }
 
 .top-header .navbar .custom-btn:hover {
-    color: #583a4c !Important;
+    color: #fff;
 }
 
 .lnk:hover span.circle2 {
@@ -213,7 +231,7 @@ span.circle2 {
     text-transform: capitalize !important;
     font-family: 'Great Vibes', cursive;
     font-size: 25px !important;
-    color:#e4b9b2  !important;
+    color:#5e929c   !important;
 }
 
 .light-blue {
@@ -341,7 +359,7 @@ header .dropdown-menu {
 }
 
 .dropdown-item,.navbar-light .navbar-nav .nav-link {
-    color: #0a2233;
+    color: #fff;
     font-weight: 500;
     text-transform: uppercase;
     font-family: Marcellus,sans-serif;
@@ -369,11 +387,15 @@ header .dropdown-menu {
 }
 
 .top-header .sticky {
-    background: #fff;
+    background: #215668;
     -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,.08);
     box-shadow: 0 4px 6px 0 rgba(12,0,46,.08);
     height: 100px;
 }
+
+/* .top-header .sticky a.nav-link {
+    color: #000;
+} */
 
 .nav-item.dropdown:hover {
     background: #fff
@@ -1068,21 +1090,21 @@ a.play-video::after {
     padding: 0 32px;
     line-height: 56px;
     outline: 0;
-    background-color: #583A4C;
+    background-color: #5e929c;
     border: none;
     -webkit-border-radius: 100px;
     border-radius: 100px 100px 100px 25px;
     display: inline-block;
     position: relative;
-    -webkit-box-shadow: 0 10px 15px 0 rgba(233,30,99,.15);
-    box-shadow: 0 10px 15px 0 rgba(233,30,99,.15);
+    -webkit-box-shadow: 0 10px 15px 0 #5e929c38;
+    box-shadow: 0 10px 15px 0 #5e929c38;
 }
 
 .btn-main:hover {
     border-radius: 100px 25px 100px 100px;
-    background: transparent;
-    color: #583A4C;
-    border: 1px solid #583A4C;
+    background: #ffffff00;
+    color: #5e929c;
+    border: 1px solid #5e929c;
 }
 
 .s-block,.wide-block {
@@ -1398,7 +1420,7 @@ a.play-video::after {
 
 .in-stats .statistics span {
     font-size: 35px;
-    color: #ff1f8e
+    color: #215668
 }
 
 .isotope_item h4 a,.portfolio-item-info h3 a,.work-card p {
@@ -2241,7 +2263,7 @@ footer.ftshap:before {
 }
 
 .footer-social-media-icons a {
-    color:#593b4d;
+    color:#215668;
     font-size: 26px;
     border-radius: 4px;
     margin: 0 3px;
@@ -2324,9 +2346,9 @@ footer.ftshap:before {
     opacity: .85;
     left: 0;
     z-index: 0;
-    background: -moz-linear-gradient(135deg,#eccfcb 0,#593b4d 100%);
-    background: -webkit-linear-gradient(135deg,#eccfcb 0,#593b4d 100%);
-    background: linear-gradient(135deg,#eccfcb 0,#593b4d 100%)
+    background: -moz-linear-gradient(135deg,#5e929c 0,#215668 100%);
+    background: -webkit-linear-gradient(135deg,#5e929c 0,#215668 100%);
+    background: linear-gradient(135deg,#5e929c 0,#215668 100%);
 }
 
 .breadcrumb-area:after {
@@ -2355,7 +2377,8 @@ footer.ftshap:before {
     font-weight: 700;
     margin: 0 10px 0 0;
     position: relative;
-    top: -3px
+    top: -3px;
+    color: #fff;
 }
 
 .text-block {
@@ -3001,7 +3024,7 @@ footer.ftshap:before {
 .category-blog a {
     display: inline-block;
     padding: 5px;
-    background: #583a4c;
+    background: #215668;
     color: #fff
 }
 
@@ -3244,19 +3267,29 @@ footer.ftshap:before {
 
 .info-card {
     padding: 30px;
-    box-shadow: 0 3.4px 2.7px -30px rgba(0,0,0,.059),0 8.2px 8.9px -30px rgba(0,0,0,.071),0 25px 40px -30px rgba(0,0,0,.2)
+    border-radius: 25px;
+    box-shadow:0 0 25.7px 2px rgb(33 86 104 / 14%)
 }
 
 .contact-card {
-    background: #fff8f2
+    background: url(../images/hero/shape-bg.jpg);
+    background-position: center;
+    /* border-radius: 99px; */
+    background-size: contain;
 }
 
 .email-card {
-    background: #ffecec
+    background: url(../images/hero/shape-bg.jpg);
+    background-position: center;
+    /* border-radius: 99px; */
+    background-size: contain;
 }
 
 .skype-card {
-    background: #eafffd
+    background: url(../images/hero/shape-bg.jpg);
+    background-position: center;
+    /* border-radius: 99px; */
+    background-size: contain;
 }
 
 .info-card span i {
@@ -3588,7 +3621,7 @@ footer.ftshap:before {
 }
 
 .fl-hero {
-    background: url(../images/hero/hero.jpg) center center no-repeat, #e4b9b2;
+    background: url(../images/hero/hero.jpg) center center no-repeat, #215668;
     background-size: cover,cover
 }
 
@@ -5615,9 +5648,9 @@ html .pb140 {
 }
 
 .bg-btn {
-    background: #583A4C;
-    -webkit-box-shadow: 0 10px 15px 0 rgba(175,0,87,.2);
-    box-shadow: 0 10px 15px 0 rgba(175,0,87,.2)
+    background-color: #5e929c;
+    -webkit-box-shadow: 0 10px 15px 0 #5e929c38 !important;
+    box-shadow: 0 10px 15px 0 #5e929c38 !important;
 }
 
 .bg-btn2 {
@@ -6239,7 +6272,7 @@ body.hc-nav-open {
     position: absolute;
     left: 0;
     height: 4px;
-    background: #050748;
+    background: #dcdcdc;
     transition: all .2s ease
 }
 
@@ -6293,8 +6326,8 @@ body.hc-nav-open {
     color: #101010!important;
     background-color: #fff;
     font-weight: 400;
-    background: url(../images/logo.png), #ffffff;
-    background-size: 60%;
+    background: url(../images/logo.png), #101010;
+    background-size: 29%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -6347,8 +6380,8 @@ body.hc-nav-open {
 }
 
 .hc-offcanvas-nav li.nav-back a,.hc-offcanvas-nav li.nav-close a {
-    background: #fff;
-    color: #101010
+    background: #101010;
+    color: #ffffff;
 }
 
 .hc-offcanvas-nav li.nav-back a:hover,.hc-offcanvas-nav li.nav-close a:hover {
@@ -6386,8 +6419,8 @@ body.hc-nav-open {
     width: 10px;
     height: 10px;
     margin-top: -3px;
-    border-top: 2px solid #101010;
-    border-left: 2px solid #101010
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff
 }
 
 .hc-offcanvas-nav li.nav-close span::before {
@@ -7236,6 +7269,18 @@ body.hc-nav-open {
     }
 
 }
+@media only screen and (max-width: 765px) {
+    .mw__765__mTB__50 {
+        margin: 50px 0;
+    }
+    .custom-btn {
+        padding: 0 15px!important;
+        line-height: 42px;
+        font-size: 12px;
+    }
+ }
+
+
 
 
 /* ===============================================================
