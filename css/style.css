@@ -7354,3 +7354,26 @@ body.hc-nav-open {
     box-shadow: 0 0px 15px -6px #ffffff !important;
     background: #215668;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================================
+
+                ARABIC
+
+=============================================*/
+.ar_ {
+    font-family: 'Bukra', sans-serif !important;
+    direction: rtl !important;
+    letter-spacing: 0 !important;
+}
